@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_27_095121) do
+ActiveRecord::Schema.define(version: 2021_05_05_091328) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1145,6 +1145,7 @@ ActiveRecord::Schema.define(version: 2021_04_27_095121) do
     t.string "code"
     t.datetime "validated_at"
     t.bigint "decidim_user_group_id"
+    t.boolean "public_participation", default: false
     t.index ["decidim_meeting_id"], name: "index_decidim_meetings_registrations_on_decidim_meeting_id"
     t.index ["decidim_user_group_id"], name: "index_decidim_meetings_registrations_on_decidim_user_group_id"
     t.index ["decidim_user_id", "decidim_meeting_id"], name: "decidim_meetings_registrations_user_meeting_unique", unique: true

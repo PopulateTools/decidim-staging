@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/decidim/decidim
-  revision: bc8f953ff802bace1afcaf57e15e11068ebc4ecc
-  branch: develop
+  revision: d5981a757df0998b4c4da5af30d8709bb400b20b
+  branch: 7297-show_participants_list_in_meetings
   specs:
     decidim (0.25.0.dev)
       decidim-accountability (= 0.25.0.dev)
@@ -374,7 +374,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    devise-i18n (1.9.3)
+    devise-i18n (1.9.4)
       devise (>= 4.7.1)
     devise_invitable (2.0.5)
       actionmailer (>= 5.0)
