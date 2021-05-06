@@ -20,8 +20,7 @@ if Rails.application.secrets.aws_access_key_id.present?
       provider:              'AWS',                                             # required
       aws_access_key_id:     Rails.application.secrets.aws_access_key_id,     # required
       aws_secret_access_key: Rails.application.secrets.aws_secret_access_key, # required
-      region:                Rails.application.secrets.aws_region,
-      host:                  Rails.application.secrets.aws_host,
+      region:                Rails.application.secrets.aws_region
     }
     config.fog_directory  = Rails.application.secrets.aws_bucket
     config.fog_public = true
